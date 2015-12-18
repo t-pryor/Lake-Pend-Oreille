@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lake_Pend_Oreille" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,46 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aY4-9j-wDq">
+                                <rect key="frame" x="277" y="251" width="46" height="30"/>
+                                <state key="normal" title="Mean"/>
+                                <connections>
+                                    <action selector="meanButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uac-hY-Yxj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cok-2L-8j2">
+                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0h-Ap-ewY">
+                                <rect key="frame" x="273" y="213" width="54" height="30"/>
+                                <state key="normal" title="Median"/>
+                                <connections>
+                                    <action selector="medianButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KHy-bv-naW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cok-2L-8j2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3t4-Mn-fD4"/>
+                            <constraint firstItem="cok-2L-8j2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Dee-vu-oAn"/>
+                            <constraint firstItem="aY4-9j-wDq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="HWO-ng-2JR"/>
+                            <constraint firstItem="aY4-9j-wDq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hsS-ee-ywP"/>
+                            <constraint firstItem="cok-2L-8j2" firstAttribute="top" secondItem="aY4-9j-wDq" secondAttribute="bottom" constant="8" id="npF-gx-whr"/>
+                            <constraint firstItem="T0h-Ap-ewY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uEt-gF-4xN"/>
+                            <constraint firstItem="aY4-9j-wDq" firstAttribute="top" secondItem="T0h-Ap-ewY" secondAttribute="bottom" constant="8" id="xo3-iE-Pe8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="cok-2L-8j2" id="GO5-HU-Z0L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="211" y="464"/>
         </scene>
     </scenes>
 </document>

@@ -14,6 +14,8 @@
 		222202F81C239C6A00ABF69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222202F61C239C6A00ABF69A /* LaunchScreen.storyboard */; };
 		222203031C239C6A00ABF69A /* Lake_Pend_OreilleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222203021C239C6A00ABF69A /* Lake_Pend_OreilleTests.swift */; };
 		2222030E1C239C6A00ABF69A /* Lake_Pend_OreilleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222030D1C239C6A00ABF69A /* Lake_Pend_OreilleUITests.swift */; };
+		2222031C1C239CBE00ABF69A /* AppBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222031B1C239CBE00ABF69A /* AppBrain.swift */; };
+		2222031E1C23A2C300ABF69A /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222031D1C23A2C300ABF69A /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		222203091C239C6A00ABF69A /* Lake Pend OreilleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lake Pend OreilleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2222030D1C239C6A00ABF69A /* Lake_Pend_OreilleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lake_Pend_OreilleUITests.swift; sourceTree = "<group>"; };
 		2222030F1C239C6A00ABF69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2222031B1C239CBE00ABF69A /* AppBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBrain.swift; sourceTree = "<group>"; };
+		2222031D1C23A2C300ABF69A /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 			children = (
 				222202ED1C239C6A00ABF69A /* AppDelegate.swift */,
 				222202EF1C239C6A00ABF69A /* ViewController.swift */,
+				2222031B1C239CBE00ABF69A /* AppBrain.swift */,
 				222202F11C239C6A00ABF69A /* Main.storyboard */,
 				222202F41C239C6A00ABF69A /* Assets.xcassets */,
 				222202F61C239C6A00ABF69A /* LaunchScreen.storyboard */,
 				222202F91C239C6A00ABF69A /* Info.plist */,
+				2222031D1C23A2C300ABF69A /* Test.swift */,
 			);
 			path = "Lake Pend Oreille";
 			sourceTree = "<group>";
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				222202F01C239C6A00ABF69A /* ViewController.swift in Sources */,
+				2222031E1C23A2C300ABF69A /* Test.swift in Sources */,
 				222202EE1C239C6A00ABF69A /* AppDelegate.swift in Sources */,
+				2222031C1C239CBE00ABF69A /* AppBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
